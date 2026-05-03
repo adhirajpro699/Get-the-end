@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bwrfcghfhcb4g"]
+
+[ext_resource type="Texture2D" uid="uid://bd2tkhj5h5umc" path="res://4139931.png" id="1_ikagf"]
+
+[node name="4139931" type="Sprite2D" unique_id=1001094458]
+position = Vector2(576, 223.99998)
+scale = Vector2(0.35156256, 0.3515625)
+texture = ExtResource("1_ikagf")

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://1os77ftwxrgd"]
+
+[ext_resource type="Script" uid="uid://s5beat4j68nv" path="res://area_2d.gd" id="1_it5pd"]
+
+[node name="Node2D" type="Node2D" unique_id=1052854824]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1963596419]
+collision_mask = 2
+script = ExtResource("1_it5pd")
+
+[node name="Timer" type="Timer" parent="Area2D" unique_id=1461951084]
+wait_time = 0.6
+one_shot = true
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="timeout" from="Area2D/Timer" to="Area2D" method="_on_timer_timeout"]
